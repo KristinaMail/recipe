@@ -1,7 +1,8 @@
 
 function Added ({ list}){
    
-          return(<div>
+          return(<div className="containerWithList">
+            <h3>What you need to buy</h3>
             <ul>{list}</ul>
 
     </div>

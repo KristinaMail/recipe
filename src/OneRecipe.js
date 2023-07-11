@@ -9,8 +9,8 @@ function OneRecipe ({list, newFunc, newFunc1, setList, newFunk1, label, calories
 
      const filtered=(ing, id)=>{
      filteredArr.push(filteredIng.filter((item, index)=>(index === id)))
-
-    newFunc(list.push(<li key={id} onClick={line} >{filteredArr}</li>))
+     
+    newFunc(list.push(<li className="list" key={id} onClick={line} >{filteredArr}</li>))
     
     
 }
@@ -28,12 +28,12 @@ const line =(e)=>{
       <div>
         <img src={img} alt="alt"/>
 <h1>{label}</h1>
-<h2>{calories.toFixed()}</h2>
+<h2>Callories : {calories.toFixed()} Kcal</h2>
 <ul>
     {ingredients.map((ing,id)=>{
          let a= (ArrFromAlIng+=ing.food+"+").split("+")
          if (a.length===ingredients.length+1){filteredIng.push(...a)} 
-          return(<li onClick={()=>filtered(ing, id)} key={id}>{ing.food}</li>)
+          return(<li className="allIng" onClick={()=>filtered(ing, id)} key={id}>{ing.food}</li>)
     
         }
     

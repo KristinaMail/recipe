@@ -11,10 +11,33 @@
 }
 .red{
   text-decoration: line-through;
+}
+.containerWithList{
+  display: flex;
+justify-content: center;
+flex-direction: column;
+  margin: auto;
+  border: 1px solid black;
+  width: 400px;
+}
+.list{
+  width: 90%;
+  text-align: center;
+}
+.list:hover{
+  background-color: rgb(247, 210, 241);
   
 }
 li{
   list-style: none;
+  font-size: 15px;
+}
+.allIng:hover{
+  background-color: rgba(246, 229, 168, 0.541);
+}
+li::first-letter{
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .del{
   display: none;
