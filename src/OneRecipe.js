@@ -17,7 +17,7 @@ function OneRecipe ({list, newFunc, newFunc1, setList, newFunk1, label, calories
 const line =(e)=>{
     const li= e.target
     li.classList.toggle("red")
-    if(e.detail == 2){
+    if(e.detail === 2){
         li.classList.toggle("del")
     }
 }
