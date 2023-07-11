@@ -1,8 +1,3 @@
-
-
-import icon from "./icon.png";
-
-
 function OneRecipe ({list, newFunc, newFunc1, setList, newFunk1, label, calories, ingredientLines, url, img, ingredients}){
 
     let ArrFromAlIng=""
@@ -28,19 +23,6 @@ const line =(e)=>{
 }
 
 
-   
-    // const del =(l)=>{
-        // ()=>delete aaa[0]
-    // filteredArr=[]
-        // const newArr= filteredArr.filter((el, i)=>(console.log(el)))
-        // myRef.current.focus()
-    //    newFunc(list.push( filteredArr=[]))
-    //  }
-  
-    //  el !== filteredArr.indexOf(el)
-
-
-
       return(
       <div>
       <div>
@@ -51,7 +33,6 @@ const line =(e)=>{
     {ingredients.map((ing,id)=>{
          let a= (ArrFromAlIng+=ing.food+"+").split("+")
          if (a.length===ingredients.length+1){filteredIng.push(...a)} 
-        //  console.log(filteredIng)
           return(<li onClick={()=>filtered(ing, id)} key={id}>{ing.food}</li>)
     
         }
